@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para Maria Fernanda rosa Arruda ❤️</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #ff6b9d 0%,
+                    #ff477e 25%,
+                    #bd2455 55%,
+                    #5c102d 100%
+                );
+
+            color: white;
+
+            overflow-x: hidden;
+
+            position: relative;
+        }
+
+
+        /* =========================
+           CORAÇÕES DE FUNDO
+        ========================= */
+
+        .heart {
+            position: fixed;
+
+            color: rgba(255, 255, 255, 0.25);
+
+            font-size: 25px;
+
+            animation:
+                subir 8s linear infinite;
+
+            bottom: -50px;
+
+            pointer-events: none;
+
+            z-index: 0;
+        }
+
+        .heart:nth-child(1) {
+            left: 10%;
+            animation-delay: 1s;
+            font-size: 20px;
+        }
+
+        .heart:nth-child(2) {
+            left: 25%;
+            animation-delay: 4s;
+            font-size: 35px;
+        }
+
+        .heart:nth-child(3) {
+            left: 45%;
+            animation-delay: 2s;
+            font-size: 18px;
+        }
+
+        .heart:nth-child(4) {
+            left: 65%;
+            animation-delay: 5s;
+            font-size: 30px;
+        }
+
+        .heart:nth-child(5) {
+            left: 82%;
+            animation-delay: 3s;
+            font-size: 22px;
+        }
+
+        @keyframes subir {
+
+            0% {
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                transform:
+                    translateY(-110vh)
+                    rotate(30deg);
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* =========================
+           CONTAINER
+        ========================= */
+
+        .container {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            max-width: 850px;
+
+            margin: auto;
+
+            padding:
+                50px 20px 80px;
+
+            text-align: center;
+
+        }
+
+
+        /* =========================
+           TÍTULO
+        ========================= */
+
+        .top-text {
+
+            font-size: 15px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            opacity: .9;
+
+            margin-bottom: 10px;
+
+        }
+
+        h1 {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size:
+                clamp(
+                    38px,
+                    7vw,
+                    70px
+                );
+
+            margin-bottom: 10px;
+
+            text-shadow:
+                0 5px 20px
+                rgba(0,0,0,.2);
+
+        }
+
+        .subtitle {
+
+            font-size: 16px;
+
+            opacity: .9;
+
+            margin-bottom: 40px;
+
+        }
+
+
+        /* =========================
+           FOTO
+        ========================= */
+
+        .photo-area {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-bottom: 45px;
+
+        }
+
+        .photo-frame {
+
+            width:
+                min(
+                    85vw,
+                    430px
+                );
+
+            height:
+                min(
+                    85vw,
+                    500px
+                );
+
+            padding: 10px;
+
+            background: white;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 20px 60px
+                rgba(70, 0, 25, .4);
+
+            transform:
+                rotate(-2deg);
+
+            transition: .4s;
+
+        }
+
+        .photo-frame:hover {
+
+            transform:
+                rotate(0deg)
+                scale(1.02);
+
+        }
+
+        .photo-frame img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            border-radius: 17px;
+
+            display: block;
+
+        }
+
+
+        /* =========================
+           CONTADOR
+        ========================= */
+
+        .counter-box {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .15
+                );
+
+            backdrop-filter:
+                blur(15px);
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .3
+                );
+
+            border-radius: 25px;
+
+            padding: 30px 20px;
+
+            margin-bottom: 35px;
+
+            box-shadow:
+                0 15px 50px
+                rgba(70, 0, 25, .25);
+
+        }
+
+        .counter-title {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size: 22px;
+
+            margin-bottom: 22px;
+
+        }
+
+        .counter {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 15px;
+
+        }
+
+        .time {
+
+            min-width: 100px;
+
+            padding: 15px 10px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .15
+                );
+
+            border-radius: 16px;
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .2
+                );
+
+        }
+
+        .time-number {
+
+            display: block;
+
+            font-size: 32px;
+
+            font-weight: bold;
+
+        }
+
+        .time-label {
+
+            display: block;
+
+            margin-top: 3px;
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            opacity: .8;
+
+        }
+
+        .love-counter {
+
+            margin-top: 25px;
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size: 20px;
+
+        }
+
+        .love-counter strong {
+
+            color: #fff;
+
+        }
+
+
+        /* =========================
+           CAIXA DE TEXTO
+        ========================= */
+
+        .message-box {
+
+            background: white;
+
+            color: #5d1733;
+
+            border-radius: 25px;
+
+            padding: 35px 30px;
+
+            text-align: left;
+
+            box-shadow:
+                0 20px 60px
+                rgba(70, 0, 25, .3);
+
+            position: relative;
+
+        }
+
+        .message-box::before {
+
+            content: "♥";
+
+            position: absolute;
+
+            top: -18px;
+
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            width: 45px;
+
+            height: 45px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+                #e9366e;
+
+            color: white;
+
+            border-radius: 50%;
+
+            font-size: 20px;
+
+            box-shadow:
+                0 5px 20px
+                rgba(200,0,60,.3);
+
+        }
+
+        .message-box h2 {
+
+            text-align: center;
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size: 28px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .message-box p {
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: #72304b;
+
+        }
+
+
+        /* =========================
+           FRASE FINAL
+        ========================= */
+
+        .final-love {
+
+            margin-top: 45px;
+
+            font-family:
+                Georgia,
+                serif;
+
+            font-size: 27px;
+
+        }
+
+        .final-love span {
+
+            display: block;
+
+            font-size: 35px;
+
+            margin-top: 8px;
+
+        }
+
+
+        /* =========================
+           RESPONSIVO
+        ========================= */
+
+        @media (max-width: 500px) {
+
+            .container {
+
+                padding:
+                    40px 15px 60px;
+
+            }
+
+            .counter {
+
+                gap: 8px;
+
+            }
+
+            .time {
+
+                min-width: 75px;
+
+                padding:
+                    12px 6px;
+
+            }
+
+            .time-number {
+
+                font-size: 25px;
+
+            }
+
+            .time-label {
+
+                font-size: 9px;
+
+            }
+
+            .message-box {
+
+                padding:
+                    32px 22px;
+
+            }
+
+            .message-box p {
+
+                font-size: 17px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- CORAÇÕES -->
+
+<div class="heart">♥</div>
+<div class="heart">♥</div>
+<div class="heart">♥</div>
+<div class="heart">♥</div>
+<div class="heart">♥</div>
+
+
+<div class="container">
+
+
+    <!-- TÍTULO -->
+
+    <div class="top-text">
+        Para o amor da minha vida
+    </div>
+
+
+    <h1>
+        Maria ❤️
+    </h1>
+
+
+    <div class="subtitle">
+        Um pouco do que sinto por vc amooor
+    </div>
+
+
+
+    <!-- FOTO -->
+
+    <div class="photo-area">
+
+        <div class="photo-frame">
+
+            <!-- TROQUE "foto.jpg" PELA SUA FOTO -->
+
+            <img
+                src="img/Design sem nome.png"
+                alt="Nós dois"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CONTADOR -->
+
+    <div class="counter-box">
+
+        <div class="counter-title">
+
+            Nosso amor começou há...
+
+        </div>
+
+
+        <div class="counter">
+
+
+            <div class="time">
+
+                <span
+                    id="days"
+                    class="time-number"
+                >
+                    0
+                </span>
+
+                <span class="time-label">
+                    Dias
+                </span>
+
+            </div>
+
+
+            <div class="time">
+
+                <span
+                    id="hours"
+                    class="time-number"
+                >
+                    0
+                </span>
+
+                <span class="time-label">
+                    Horas
+                </span>
+
+            </div>
+
+
+            <div class="time">
+
+                <span
+                    id="minutes"
+                    class="time-number"
+                >
+                    0
+                </span>
+
+                <span class="time-label">
+                    Minutos
+                </span>
+
+            </div>
+
+
+            <div class="time">
+
+                <span
+                    id="seconds"
+                    class="time-number"
+                >
+                    0
+                </span>
+
+                <span class="time-label">
+                    Segundos
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="love-counter">
+
+            <strong id="loveDays">
+                0
+            </strong>
+
+            dias te amando ❤️
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CARTA -->
+
+    <div class="message-box">
+
+        <h2>
+            Para você, meu amor ❤️
+        </h2>
+
+
+        <p>
+
+            Meu xuxu, vc é o amor da minha vida!! 
+            sou grato por tudo que vc faz!! Valorizo
+            cada coisa,gesto..tudoo
+
+            <br><br>
+
+            Cada momento ao seu lado se tornou
+            uma lembrança que eu quero guardar
+            para sempre. 
+
+            <br><br>
+
+            Obrigado por sempre estar comigo, 
+            por aguentar minhas chatices,
+            por sempre sempre fazer meu dia feliz.
+
+            Saiba que vc é meu porto seguro, a pessoa
+            que eu quero estar pelo resto da minha vida!
+            Quero ser seu porto seguro tbm, seu apoio, sua felicidade.
+
+            <br><br>
+
+            Eu tenho certeza que sempre vai ser nós.
+            que nos vamos casar e ser muito, mas muito feliz juntos!! 
+            eu te vivo e vc é minha maior benção, melhor presente de Deus.
+            para sempre nós ❤️
+
+            <br><br>
+
+            Eu te amo. ❤️
+
+        </p>
+
+    </div>
+
+
+
+    <!-- FINAL -->
+
+    <div class="final-love">
+            Eu ainda vou te dar meu sobrenome!!
+
+        <span>
+            ❤️ ∞ ❤️
+        </span>
+
+    </div>
+
+
+</div>
+
+
+
+<script>
+
+
+    /* ==========================================
+       DATA EM QUE COMEÇARAM
+
+       ALTERE AQUI:
+
+       formato:
+
+       ANO, MÊS - 1, DIA, HORA, MINUTO, SEGUNDO
+
+       Exemplo:
+
+       2026, 8, 9
+
+       significa:
+
+       09/09/2026
+    ========================================== */
+
+
+    const inicio = new Date(
+
+        2026,
+        4,
+        9,
+        0,
+        0,
+        0
+
+    );
+
+
+
+    /* ==========================================
+       CONTADOR
+    ========================================== */
+
+    function atualizarContador() {
+
+
+        const agora =
+            new Date();
+
+
+        const diferenca =
+            agora - inicio;
+
+
+        if (diferenca < 0) {
+
+            return;
+
+        }
+
+
+        const segundo =
+            1000;
+
+
+        const minuto =
+            segundo * 60;
+
+
+        const hora =
+            minuto * 60;
+
+
+        const dia =
+            hora * 24;
+
+
+
+        const dias =
+            Math.floor(
+                diferenca / dia
+            );
+
+
+        const horas =
+            Math.floor(
+                (diferenca % dia) / hora
+            );
+
+
+        const minutos =
+            Math.floor(
+                (diferenca % hora) / minuto
+            );
+
+
+        const segundos =
+            Math.floor(
+                (diferenca % minuto) / segundo
+            );
+
+
+
+        document.getElementById(
+            "days"
+        ).textContent = dias;
+
+
+        document.getElementById(
+            "hours"
+        ).textContent =
+            String(horas)
+            .padStart(2, "0");
+
+
+        document.getElementById(
+            "minutes"
+        ).textContent =
+            String(minutos)
+            .padStart(2, "0");
+
+
+        document.getElementById(
+            "seconds"
+        ).textContent =
+            String(segundos)
+            .padStart(2, "0");
+
+
+        document.getElementById(
+            "loveDays"
+        ).textContent = dias;
+
+    }
+
+
+
+    atualizarContador();
+
+
+    setInterval(
+        atualizarContador,
+        1000
+    );
+
+
+</script>
+
+
+</body>
+
+</html>
